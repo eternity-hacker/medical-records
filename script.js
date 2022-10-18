@@ -1,21 +1,8 @@
-//office options
-const newportOption = document.querySelector("option[value='newport']");
-const costaMesaOption = document.querySelector("option[value='costa-mesa']");
+const offices = document.querySelector("#offices");
+const locations = document.querySelector(".locations");
 
-//office info elements
-const newportOffice = document.querySelector("#newport-office");
-const costaMesaOffice = document.querySelector("#costa-mesa-office");
-
-newportOption.addEventListener("click", function (event) {
-  if (costaMesaOffice.style.display === "block") {
-    costaMesaOffice.style.display = "none";
+offices.addEventListener("click", function (event) {
+  if (event.target.value === "office-1") {
+  } else if (event.target.value === "office-2") {
   }
-  newportOffice.style.display = "block";
-});
-
-costaMesaOption.addEventListener("click", function (event) {
-  if (newportOffice.style.display === "block") {
-    newportOffice.style.display = "none";
-  }
-  costaMesaOffice.style.display = "block";
 });
