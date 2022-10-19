@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "nerd-fonts";
+  src: url("./fonts/Symbols-2048-em\ Nerd\ Font\ Complete.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* global rules */
+i {
+  font-family: "nerd-fonts";
 }
 
 #container {
@@ -48,11 +58,19 @@ section h2 {
 
 #records-box figure {
   flex-basis: 200px;
-
+  position: relative;
   height: 150px;
   margin: 10px auto;
   padding: 10px;
   border: 3px solid lightblue;
+}
+
+i.exclamation::after {
+  content: "\f071";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
 }
 
 figure img {
