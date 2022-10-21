@@ -63,14 +63,23 @@ section h2 {
   margin: 10px auto;
   padding: 10px;
   border: 3px solid lightblue;
+  font-family: "nerd-fonts";
+}
+
+#records-box figure i::after {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 i.exclamation::after {
   content: "\f071";
-  position: absolute;
-  top: 10px;
-  right: 15px;
   color: red;
+}
+
+i.checkmark::after {
+  content: "\f058";
+  color: green;
 }
 
 figure img {
