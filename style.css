@@ -15,6 +15,7 @@ i {
 }
 
 #container {
+  margin: 10px;
 }
 
 header {
@@ -32,7 +33,7 @@ main {
 }
 
 aside {
-  width: 30%;
+  width: 35%;
 }
 
 aside .locations {
@@ -40,10 +41,17 @@ aside .locations {
 }
 
 section {
-  width: 70%;
+  width: 65%;
 }
 
 section h2 {
+  text-align: center;
+  color: blue;
+}
+
+.locations span {
+  width: 100%;
+  display: block;
   text-align: center;
 }
 
