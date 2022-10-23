@@ -30,18 +30,19 @@ header {
 main {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 aside {
-  width: 35%;
+  flex-basis: 35%;
 }
 
 aside .locations {
   display: none;
 }
 
-section {
-  width: 65%;
+main section#records-container {
+  flex-basis: 65%;
 }
 
 section h2 {
