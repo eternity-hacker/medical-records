@@ -31,6 +31,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 aside {
@@ -39,6 +40,10 @@ aside {
 
 aside .locations {
   display: none;
+}
+
+aside select#offices {
+  text-transform: uppercase;
 }
 
 main section#records-container {
